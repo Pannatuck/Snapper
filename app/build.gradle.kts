@@ -40,7 +40,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
@@ -72,11 +72,9 @@ dependencies {
     implementation(libs.androidx.icons)
 
     // CameraX
-    implementation(libs.camera.core)
-    implementation(libs.camera.camera2)
-    implementation(libs.camera.lifecycle)
-    implementation(libs.camera.video)
-    implementation(libs.camera.view)
-    implementation(libs.camera.extensions)
+    implementation(libs.bundles.camerax)
+
+    // ViewModel
+    implementation(libs.lifecycle.viewmodel.compose)
 
 }
