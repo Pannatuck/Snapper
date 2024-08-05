@@ -77,4 +77,9 @@ dependencies {
     // ViewModel
     implementation(libs.lifecycle.viewmodel.compose)
 
+    // TensorFlow
+    implementation(libs.tensorflow.lite.task.vision)
+    implementation(libs.tensorflow.gpu.delegate.plugin)
+    implementation(libs.tensorflow.gpu.delegate)
+
 }
